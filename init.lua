@@ -43,10 +43,9 @@ require('telescope').setup {
 }
 require('telescope').load_extension('fzy_native')
 -------------------------- Fuzzy finder END --------------------------
-
-
+--
 -------------------------- Installer --------------------------
-use { "williamboman/mason.nvim" } 
+use { "williamboman/mason.nvim" }
 require("mason").setup()
 -------------------------- Installer END --------------------------
 --
@@ -90,6 +89,7 @@ vim.opt.shortmess:append("c")
 vim.o.clipboard = 'unnamedplus'
 vim.o.path = "$PWD/**"
 vim.o.number = true
+vim.bo.shiftwidth = 4
 vim.o.smartindent = true
 vim.o.relativenumber = true
 vim.cmd[[colorscheme moonfly]]
